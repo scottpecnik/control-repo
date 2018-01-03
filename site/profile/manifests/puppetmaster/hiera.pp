@@ -1,0 +1,6 @@
+#
+#
+
+class profile::puppetmaster::hiera {
+
+}
