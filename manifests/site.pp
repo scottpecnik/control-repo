@@ -30,3 +30,11 @@ node default {
   # Example:
   #   class { 'my_class': }
 }
+
+node puppetmaster.vagrant {
+  class { 'puppetdb':
+    listen_address   => '0.0.0.0',
+    open_listen_port => true,
+  }
+  include puppetdb::master::config
+}
