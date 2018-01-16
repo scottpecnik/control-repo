@@ -6,15 +6,15 @@ class profile::puppetmaster::r10k {
 
   file { '/etc/puppetlabs/r10k':
     ensure => directory,
-    owner  => 'root',
-    group  => 'root',
+    owner  => 'puppet',
+    group  => 'puppet',
   }
 
   file { '/etc/puppetlabs/r10k/r10k.yaml':
     ensure  => present,
     content => template('profile/puppetmaster/r10k.erb'),
-    owner   => 'root',
-    group   => 'root',
+    owner   => 'puppet',
+    group   => 'puppet',
     require => File['/etc/puppetlabs/r10k'],
   }
 }
