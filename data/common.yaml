@@ -1,2 +1,5 @@
 ---
 message: "This node is using common data"
+
+puppetmaster::puppetdb::listen_address: '0.0.0.0'
+puppetmaster::r10k::control_repo_remote: 'https://github.com/scottpecnik/control-repo.git'

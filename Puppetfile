@@ -8,6 +8,7 @@ mod 'puppetlabs/inifile',      '2.1.1'
 mod 'puppetlabs/postgresql',   '5.2.1'
 mod 'puppetlabs/firewall',     '1.11.0'
 mod 'puppetlabs/concat',       '4.1.1'
+mod 'puppet/hiera',            '3.3.1'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
